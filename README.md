@@ -1,9 +1,5 @@
 # 🚌 Bus Ticket Reservation System
 
-![Language](https://img.shields.io/badge/Language-C%2B%2B-blue)
-![Type](https://img.shields.io/badge/Type-Console%20Application-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
-
 A menu-driven C++ application for managing bus ticket reservations with seat availability tracking, fare calculation, and role-based discounts for students, faculty, and staff.
 
 **Built by Malik Ali Raza**
@@ -155,12 +151,6 @@ Building this project strengthened my understanding of C++ fundamentals, menu-dr
 - Multiple bus support
 - Database integration
 - Graphical User Interface (GUI)
-
----
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
