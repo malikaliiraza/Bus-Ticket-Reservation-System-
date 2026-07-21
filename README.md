@@ -109,7 +109,6 @@ Bus-Ticket-Reservation-System/
 │
 ├── Source.cpp
 ├── README.md
-└── .gitignore
 ```
 
 ---
