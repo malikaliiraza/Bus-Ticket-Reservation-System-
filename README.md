@@ -108,9 +108,9 @@ Start Program
 Bus-Ticket-Reservation-System/
 │
 │
-├── Sample Run.png
-├── Source.cpp
-└── README.md
+├── Code.cpp
+├── README.md
+└── Sample Run.png
 ```
 
 ---
