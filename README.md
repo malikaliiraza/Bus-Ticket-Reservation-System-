@@ -28,6 +28,39 @@ This project demonstrates fundamental programming concepts such as functions, ar
 
 ---
 
+## Technologies Used
+
+| Component | Technology |
+|----------|------------|
+| Language | C++ |
+| IDE | Microsoft Visual Studio |
+| Concepts | Arrays, Functions, Loops, Conditional Statements, Menu-Driven Programming |
+
+---
+
+## 🎯 Learning Objectives
+
+This project demonstrates the following programming concepts:
+
+- Functions and Modular Programming
+- Structures (`struct`) for Data Organization
+- Arrays for Data Storage
+- Conditional Statements (`if`, `if-else`, `switch`)
+- Loops (`for`, `while`)
+- Menu-Driven Programming
+- User Input and Output (`cin` / `cout`)
+- Bus and Route Management
+- Ticket Reservation System
+- Seat Allocation and Management
+- Fare Calculation Based on Distance
+- Discount Calculation for Different User Types
+- String Handling (`strcpy`, `strcmp`)
+- Data Management Using Arrays and Structures
+- Console-Based User Interface
+- Problem-Solving and Logical Thinking
+
+---
+
 ## Sample Run
 
 ```
@@ -89,16 +122,6 @@ Start Program
       ▼
  Booking Confirmation
 ```
-
----
-
-## Technologies Used
-
-| Component | Technology |
-|----------|------------|
-| Language | C++ |
-| IDE | Microsoft Visual Studio |
-| Concepts | Arrays, Functions, Loops, Conditional Statements, Menu-Driven Programming |
 
 ---
 
