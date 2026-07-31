@@ -6,7 +6,7 @@ A menu-driven C++ application for managing bus ticket reservations with seat ava
 
 ---
 
-## Overview
+## 📖 Overview
 
 The **Bus Ticket Reservation System** is a console-based application developed in C++ that simulates a simple bus ticket booking process. It allows users to reserve seats from a 10-seat layout, calculates ticket fares based on passenger categories, and provides an easy-to-use menu-driven interface.
 
