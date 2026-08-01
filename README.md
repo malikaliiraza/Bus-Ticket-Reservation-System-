@@ -28,13 +28,13 @@ This project demonstrates fundamental programming concepts such as functions, ar
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-| Component | Technology |
-|----------|------------|
-| Language | C++ |
-| IDE | Microsoft Visual Studio |
-| Concepts | Arrays, Functions, Loops, Conditional Statements, Menu-Driven Programming |
+* **Programming Language:** C++
+* **Programming Paradigm:** Programming Fundamentals (PF)
+* **Development Environment:** Microsoft Visual Studio
+* **Application Type:** Console-Based Application
+* **Concepts:** Arrays, Functions, Loops, Conditional Statements, Menu-Driven Programming
 
 ---
 
