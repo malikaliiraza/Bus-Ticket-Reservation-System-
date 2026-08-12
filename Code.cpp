@@ -80,11 +80,11 @@ void addBus()
         return;
     }
     Bus bus;
-    cout<<"Enter Bus Number: ";
+    cout<<"Enter Bus Number : ";
     cin>>bus.busNumber;
-    cout<<"Enter Seat Capacity: ";
+    cout<<"Enter Seat Capacity : ";
     cin>>bus.totalSeat;
-    cout<<"Enter Driver Name: ";
+    cout<<"Enter Driver Name : ";
     cin>>bus.driverName;
 	buses[busCount++] = bus;
     cout << "Bus added successfully!\n";
