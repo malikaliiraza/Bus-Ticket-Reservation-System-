@@ -197,18 +197,4 @@ Riphah International University
 
 ---
 
-## Future Features
-
-- 🚌 Menu-driven console interface
-- 💺 10-seat reservation layout
-- 📍 Real-time seat availability
-- 🎓 Student fare discount
-- 👨‍🏫 Faculty fare discount
-- 👨‍💼 Staff fare discount
-- 💰 Automatic fare calculation
-- ✅ Booking confirmation
-- ⚠️ Input validation
-
----
-
 ⭐ If you found this project useful, consider giving it a star on GitHub!
