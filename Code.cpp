@@ -98,15 +98,15 @@ void addRoute()
         return;
     }
     Route route;
-    cout<<"Enter Departure: ";
+    cout<<"Enter Departure : ";
     cin>>route.departure;
-    cout << "Enter Arrival: ";
+    cout << "Enter Arrival : ";
     cin>>route.arrival;
-    cout<<"Enter Distance (in km): ";
+    cout<<"Enter Distance (in km) : ";
     cin>>route.distance;
-    cout<<"Enter Duration (in minutes): ";
+    cout<<"Enter Duration (in minutes) : ";
     cin>>route.duration;
-    cout<<"Enter Stops (Enter 'done' to stop):\n";
+    cout<<"Enter Stops (Enter 'done' to stop) :\n";
     int stopCount = 0;
     while (true)
 	{
