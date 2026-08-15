@@ -203,7 +203,7 @@ void adminMenu()
                 cout<<"Exiting Admin Menu...\n";
                 break;
             default:
-                cout<<"Invalid choice! Please try again.\n";
+                cout<<"Invalid choice! Please Try Again.\n";
         }
     }
 }
