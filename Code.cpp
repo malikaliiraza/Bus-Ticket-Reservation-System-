@@ -4,7 +4,7 @@ using namespace std;
 const int max_buses = 10;
 const int max_routes = 10;
 const int max_reservations = 10;
-struct Bus //BUS DETAILS
+struct Bus
 {
     int busNumber;
     int totalSeat;
