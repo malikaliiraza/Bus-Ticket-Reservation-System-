@@ -198,3 +198,9 @@ Riphah International University
 ---
 
 ⭐ If you found this project useful, consider giving it a star on GitHub!
+
+---
+
+# Summary
+
+A menu-driven C++ application for managing bus ticket reservations with seat availability tracking, fare calculation, and role-based discounts for students, faculty, and staff.
