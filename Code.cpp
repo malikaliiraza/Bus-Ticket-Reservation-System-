@@ -57,7 +57,7 @@ void displaySeatLayout(int totalSeats)
 
 int applyDiscount(int fare, const char *userType)
 {
-	if(userType == "Student")
+	if (userType == "Student")
     {
         return fare - (fare * 20 / 100);
     }
@@ -74,7 +74,7 @@ int applyDiscount(int fare, const char *userType)
 
 void addBus()
 {
-    if(busCount >= max_buses)
+    if (busCount >= max_buses)
 	{
         cout<<"Cannot add more buses. Maximum limit reached.\n";
         return;
@@ -123,7 +123,7 @@ void addRoute()
 void displayRoutes()
 {
     cout<<"Available Routes:\n";
-    for(int i=0; i<routeCount; i++)
+    for (int i=0; i<routeCount; i++)
 	{
         cout<<i+1<<". "<<routes[i].departure<<" to "<<routes[i].arrival<<" | Distance: "<<routes[i].distance<<" km | Duration: "<<routes[i].duration<<" min\n";
     }
@@ -136,7 +136,7 @@ void bookTicket()
     cout<<"Enter route number to book a ticket: ";
     cin>>routeIndex;
 
-    if(routeIndex<1 || routeIndex>routeCount)
+    if (routeIndex<1 || routeIndex>routeCount)
 	{
         cout<<"Invalid route number.\n";
         return;
