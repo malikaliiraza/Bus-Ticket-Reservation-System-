@@ -74,7 +74,7 @@ int applyDiscount(int fare, const char *userType)
 
 void addBus()
 {
-    if(busCount >= max_buses)
+    if (busCount >= max_buses)
 	{
         cout<<"Cannot add more buses. Maximum limit reached.\n";
         return;
@@ -92,7 +92,7 @@ void addBus()
 
 void addRoute()
 {
-    if(routeCount >= max_routes)
+    if (routeCount >= max_routes)
 	{
         cout<<"Cannot add more routes. Maximum limit reached.\n";
         return;
@@ -108,10 +108,10 @@ void addRoute()
     cin>>route.duration;
     cout<<"Enter Stops (Enter 'done' to stop) :\n";
     int stopCount = 0;
-    while (true)
+    while(true)
 	{
         cin>>route.stops[stopCount];
-        if(strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
+        if (strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
 		break;
         stopCount++;
     }
@@ -153,7 +153,7 @@ void bookTicket()
     cin>>userType;
     int fare = selectedRoute.distance*10;
     int finalFare = applyDiscount(fare, userType);
-    if(reservationCount >= max_reservations)
+    if (reservationCount >= max_reservations)
 	{
         cout<<"Reservation limit reached!\n";
         return;
@@ -172,7 +172,7 @@ void bookTicket()
 void adminMenu()
 {
     int choice;
-    for(;choice!=3;)
+    for (;choice!=3;)
     {
         cout<<"\nAdmin Menu:\n";
         cout<<"1. Add Bus\n";
@@ -182,7 +182,7 @@ void adminMenu()
         cout<<"5. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
-        switch (choice)
+        switch(choice)
 		{
             case 1:
                 addBus();
@@ -211,7 +211,7 @@ void adminMenu()
 void mainMenu()
 {
     int choice;
-    for(;choice!=3;)
+    for (;choice!=3;)
 	{
 		cout<<"\nDAWOO Bus Reservation System\n";
         cout<<"1. Admin Menu\n";
@@ -219,7 +219,7 @@ void mainMenu()
         cout<<"3. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
-        switch (choice)
+        switch(choice)
         {
             case 1:
                 adminMenu();
