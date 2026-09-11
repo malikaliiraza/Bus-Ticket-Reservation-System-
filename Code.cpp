@@ -45,7 +45,7 @@ int busCount = 0;
 int routeCount = 0;
 int reservationCount = 0;
 
-void displaySeatLayout(int totalSeats)
+void displaySeatLayout (int totalSeats)
 {
     cout << "Seat Layout:\n";
     for(int i = 1; i <= totalSeats; i++)
@@ -55,7 +55,7 @@ void displaySeatLayout(int totalSeats)
     cout<<"\n";
 }
 
-int applyDiscount(int fare, const char *userType)
+int applyDiscount (int fare, const char *userType)
 {
 	if(userType == "Student")
     {
@@ -74,7 +74,7 @@ int applyDiscount(int fare, const char *userType)
 
 void addBus()
 {
-    if (busCount >= max_buses)
+    if(busCount >= max_buses)
 	{
         cout<<"Cannot add more buses. Maximum limit reached.\n";
         return;
@@ -92,7 +92,7 @@ void addBus()
 
 void addRoute()
 {
-    if(routeCount >= max_routes)
+    if (routeCount >= max_routes)
 	{
         cout<<"Cannot add more routes. Maximum limit reached.\n";
         return;
