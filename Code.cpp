@@ -111,7 +111,7 @@ void addRoute()
     while (true)
 	{
         cin>>route.stops[stopCount];
-        if (strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
+        if(strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
 		break;
         stopCount++;
     }
@@ -123,7 +123,7 @@ void addRoute()
 void displayRoutes()
 {
     cout<<"Available Routes:\n";
-    for (int i=0; i<routeCount; i++)
+    for(int i=0; i<routeCount; i++)
 	{
         cout<<i+1<<". "<<routes[i].departure<<" to "<<routes[i].arrival<<" | Distance: "<<routes[i].distance<<" km | Duration: "<<routes[i].duration<<" min\n";
     }
@@ -136,7 +136,7 @@ void bookTicket()
     cout<<"Enter route number to book a ticket: ";
     cin>>routeIndex;
 
-    if (routeIndex<1 || routeIndex>routeCount)
+    if(routeIndex<1 || routeIndex>routeCount)
 	{
         cout<<"Invalid route number.\n";
         return;
@@ -153,7 +153,7 @@ void bookTicket()
     cin>>userType;
     int fare = selectedRoute.distance*10;
     int finalFare = applyDiscount(fare, userType);
-    if (reservationCount >= max_reservations)
+    if(reservationCount >= max_reservations)
 	{
         cout<<"Reservation limit reached!\n";
         return;
@@ -172,7 +172,7 @@ void bookTicket()
 void adminMenu()
 {
     int choice;
-    for(;choice!=3;)
+    for (;choice!=3;)
     {
         cout<<"\nAdmin Menu:\n";
         cout<<"1. Add Bus\n";
@@ -182,7 +182,7 @@ void adminMenu()
         cout<<"5. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
-        switch(choice)
+        switch (choice)
 		{
             case 1:
                 addBus();
@@ -194,7 +194,7 @@ void adminMenu()
                 displayRoutes();
                 break;
             case 4:
-                for(int i=0; i<busCount; i++)
+                for (int i=0; i<busCount; i++)
 				{
                     cout<<"Bus "<<buses[i].busNumber<<" | Driver: "<<buses[i].driverName<<endl;
                 }
@@ -211,7 +211,7 @@ void adminMenu()
 void mainMenu()
 {
     int choice;
-    for(;choice!=3;)
+    for (;choice!=3;)
 	{
 		cout<<"\nDAWOO Bus Reservation System\n";
         cout<<"1. Admin Menu\n";
@@ -219,7 +219,7 @@ void mainMenu()
         cout<<"3. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
-        switch(choice)
+        switch (choice)
         {
             case 1:
                 adminMenu();
