@@ -45,7 +45,7 @@ int busCount = 0;
 int routeCount = 0;
 int reservationCount = 0;
 
-void displaySeatLayout (int totalSeats)
+void displaySeatLayout(int totalSeats)
 {
     cout << "Seat Layout:\n";
     for(int i = 1; i <= totalSeats; i++)
@@ -55,7 +55,7 @@ void displaySeatLayout (int totalSeats)
     cout<<"\n";
 }
 
-int applyDiscount (int fare, const char *userType)
+int applyDiscount(int fare, const char *userType)
 {
 	if (userType == "Student")
     {
@@ -65,7 +65,7 @@ int applyDiscount (int fare, const char *userType)
     {
         return fare - (fare * 15 / 100);
     }
-    else if (userType == "Staff")
+    else if(userType == "Staff")
     {
         return fare - (fare * 10 / 100);
     }
@@ -108,7 +108,7 @@ void addRoute()
     cin>>route.duration;
     cout<<"Enter Stops (Enter 'done' to stop) :\n";
     int stopCount = 0;
-    while (true)
+    while(true)
 	{
         cin>>route.stops[stopCount];
         if(strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
@@ -172,7 +172,7 @@ void bookTicket()
 void adminMenu()
 {
     int choice;
-    for (;choice!=3;)
+    for(;choice!=3;)
     {
         cout<<"\nAdmin Menu:\n";
         cout<<"1. Add Bus\n";
@@ -182,7 +182,7 @@ void adminMenu()
         cout<<"5. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
-        switch (choice)
+        switch(choice)
 		{
             case 1:
                 addBus();
@@ -219,7 +219,7 @@ void mainMenu()
         cout<<"3. Exit\n";
         cout<<"Enter your choice: ";
         cin>>choice;
-        switch (choice)
+        switch(choice)
         {
             case 1:
                 adminMenu();
