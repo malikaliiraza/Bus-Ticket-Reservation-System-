@@ -48,7 +48,7 @@ int reservationCount = 0;
 void displaySeatLayout(int totalSeats)
 {
     cout << "Seat Layout:\n";
-    for (int i = 1; i <= totalSeats; i++)
+    for(int i = 1; i <= totalSeats; i++)
 	{
         cout<<"Seat"<<i<<(i%10==0?"\n":"\t");
     }
@@ -57,7 +57,7 @@ void displaySeatLayout(int totalSeats)
 
 int applyDiscount(int fare, const char *userType)
 {
-	if (userType == "Student")
+	if(userType == "Student")
     {
         return fare - (fare * 20 / 100);
     }
@@ -74,7 +74,7 @@ int applyDiscount(int fare, const char *userType)
 
 void addBus()
 {
-    if (busCount >= max_buses)
+    if(busCount >= max_buses)
 	{
         cout<<"Cannot add more buses. Maximum limit reached.\n";
         return;
@@ -92,7 +92,7 @@ void addBus()
 
 void addRoute()
 {
-    if (routeCount >= max_routes)
+    if(routeCount >= max_routes)
 	{
         cout<<"Cannot add more routes. Maximum limit reached.\n";
         return;
@@ -108,7 +108,7 @@ void addRoute()
     cin>>route.duration;
     cout<<"Enter Stops (Enter 'done' to stop) :\n";
     int stopCount = 0;
-    while  (true)
+    while (true)
 	{
         cin>>route.stops[stopCount];
         if(strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
@@ -123,7 +123,7 @@ void addRoute()
 void displayRoutes()
 {
     cout<<"Available Routes:\n";
-    for (int i=0; i<routeCount; i++)
+    for(int i=0; i<routeCount; i++)
 	{
         cout<<i+1<<". "<<routes[i].departure<<" to "<<routes[i].arrival<<" | Distance: "<<routes[i].distance<<" km | Duration: "<<routes[i].duration<<" min\n";
     }
@@ -136,7 +136,7 @@ void bookTicket()
     cout<<"Enter route number to book a ticket: ";
     cin>>routeIndex;
 
-    if (routeIndex<1 || routeIndex>routeCount)
+    if(routeIndex<1 || routeIndex>routeCount)
 	{
         cout<<"Invalid route number.\n";
         return;
@@ -153,7 +153,7 @@ void bookTicket()
     cin>>userType;
     int fare = selectedRoute.distance*10;
     int finalFare = applyDiscount(fare, userType);
-    if (reservationCount >= max_reservations)
+    if(reservationCount >= max_reservations)
 	{
         cout<<"Reservation limit reached!\n";
         return;
@@ -172,7 +172,7 @@ void bookTicket()
 void adminMenu()
 {
     int choice;
-    for (;choice!=3;)
+    for(;choice!=3;)
     {
         cout<<"\nAdmin Menu:\n";
         cout<<"1. Add Bus\n";
@@ -194,7 +194,7 @@ void adminMenu()
                 displayRoutes();
                 break;
             case 4:
-                for (int i=0; i<busCount; i++)
+                for(int i=0; i<busCount; i++)
 				{
                     cout<<"Bus "<<buses[i].busNumber<<" | Driver: "<<buses[i].driverName<<endl;
                 }
@@ -211,7 +211,7 @@ void adminMenu()
 void mainMenu()
 {
     int choice;
-    for (;choice!=3;)
+    for(;choice!=3;)
 	{
 		cout<<"\nDAWOO Bus Reservation System\n";
         cout<<"1. Admin Menu\n";
