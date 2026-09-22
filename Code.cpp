@@ -48,7 +48,7 @@ int reservationCount = 0;
 void displaySeatLayout(int totalSeats)
 {
     cout << "Seat Layout:\n";
-    for (int i = 1; i <= totalSeats; i++)
+    for(int i = 1; i <= totalSeats; i++)
 	{
         cout<<"Seat"<<i<<(i%10==0?"\n":"\t");
     }
@@ -57,15 +57,15 @@ void displaySeatLayout(int totalSeats)
 
 int applyDiscount(int fare, const char *userType)
 {
-	if (userType == "Student")
+	if(userType == "Student")
     {
         return fare - (fare * 20 / 100);
     }
-    else if (userType == "Faculty")
+    else if(userType == "Faculty")
     {
         return fare - (fare * 15 / 100);
     }
-    else if (userType == "Staff")
+    else if(userType == "Staff")
     {
         return fare - (fare * 10 / 100);
     }
@@ -74,7 +74,7 @@ int applyDiscount(int fare, const char *userType)
 
 void addBus()
 {
-    if (busCount >= max_buses)
+    if(busCount >= max_buses)
 	{
         cout<<"Cannot add more buses. Maximum limit reached.\n";
         return;
@@ -92,7 +92,7 @@ void addBus()
 
 void addRoute()
 {
-    if (routeCount >= max_routes)
+    if(routeCount >= max_routes)
 	{
         cout<<"Cannot add more routes. Maximum limit reached.\n";
         return;
@@ -108,10 +108,10 @@ void addRoute()
     cin>>route.duration;
     cout<<"Enter Stops (Enter 'done' to stop) :\n";
     int stopCount = 0;
-    while (true)
+    while(true)
 	{
         cin>>route.stops[stopCount];
-        if (strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
+        if(strcmp(route.stops[stopCount], "done") == 0 || stopCount >= 5)
 		break;
         stopCount++;
     }
@@ -123,7 +123,7 @@ void addRoute()
 void displayRoutes()
 {
     cout<<"Available Routes:\n";
-    for (int i=0; i<routeCount; i++)
+    for(int i=0; i<routeCount; i++)
 	{
         cout<<i+1<<". "<<routes[i].departure<<" to "<<routes[i].arrival<<" | Distance: "<<routes[i].distance<<" km | Duration: "<<routes[i].duration<<" min\n";
     }
@@ -136,7 +136,7 @@ void bookTicket()
     cout<<"Enter route number to book a ticket: ";
     cin>>routeIndex;
 
-    if (routeIndex<1 || routeIndex>routeCount)
+    if(routeIndex<1 || routeIndex>routeCount)
 	{
         cout<<"Invalid route number.\n";
         return;
