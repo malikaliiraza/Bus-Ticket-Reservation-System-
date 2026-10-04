@@ -30,11 +30,11 @@ This project demonstrates fundamental programming concepts such as functions, ar
 
 ## 🛠️ Technologies Used
 
-* **Programming Language :** C++
-* **Programming Paradigm :** Programming Fundamentals (PF)
-* **Development Environment :** Microsoft Visual Studio
-* **Application Type :** Console-Based Application
-* **Concepts :** Arrays, Functions, Loops, Conditional Statements, Menu-Driven Programming
+* **Programming Language:** C++
+* **Programming Paradigm:** Programming Fundamentals (PF)
+* **Development Environment:** Microsoft Visual Studio
+* **Application Type:** Console-Based Application
+* **Concepts:** Arrays, Functions, Loops, Conditional Statements, Menu-Driven Programming
 
 ---
 
@@ -191,9 +191,9 @@ https://github.com/malikaliiraza/Bus-Ticket-Reservation-System-
 Software Engineering Undergraduate
 Riphah International University
 
-- **Portfolio :** https://malikaliiraza.github.io/
-- **LinkedIn :** https://www.linkedin.com/in/malikaliraza/
-- **GitHub :** https://github.com/malikaliiraza
+- **Portfolio:** https://malikaliiraza.github.io/
+- **LinkedIn:** https://www.linkedin.com/in/malikaliraza/
+- **GitHub:** https://github.com/malikaliiraza
 
 ---
 
