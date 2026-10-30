@@ -48,16 +48,16 @@ int reservationCount = 0;
 void displaySeatLayout(int totalSeats)
 {
     cout << "Seat Layout:\n";
-    for (int i = 1; i <= totalSeats; i++)
+    for(int i = 1; i <= totalSeats; i++)
 	{
         cout<<"Seat"<<i<<(i%10==0?"\n":"\t");
     }
     cout<<"\n";
 }
 
-int applyDiscount (int fare, const char *userType)
+int applyDiscount(int fare, const char *userType)
 {
-	if (userType == "Student")
+	if(userType == "Student")
     {
         return fare - (fare * 20 / 100);
     }
@@ -123,7 +123,7 @@ void addRoute()
 void displayRoutes()
 {
     cout<<"Available Routes:\n";
-    for (int i=0; i<routeCount; i++)
+    for(int i=0; i<routeCount; i++)
 	{
         cout<<i+1<<". "<<routes[i].departure<<" to "<<routes[i].arrival<<" | Distance: "<<routes[i].distance<<" km | Duration: "<<routes[i].duration<<" min\n";
     }
@@ -136,7 +136,7 @@ void bookTicket()
     cout<<"Enter route number to book a ticket: ";
     cin>>routeIndex;
 
-    if (routeIndex<1 || routeIndex>routeCount)
+    if(routeIndex<1 || routeIndex>routeCount)
 	{
         cout<<"Invalid route number.\n";
         return;
